@@ -204,7 +204,6 @@ export default function FilterDrawer({
           />
         );
       case "enum":
-        // Assuming we have a list of enum values
         const enumValues = [
           "Engineer",
           "Intern",
@@ -213,7 +212,7 @@ export default function FilterDrawer({
           "Manager",
           "Senior Manager",
           "Product Manager",
-        ]; // Replace with actual enum values
+        ]; 
         return (
           <Select
             multiple={filterType === "in" || filterType === "notIn"}
